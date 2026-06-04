@@ -1,4 +1,4 @@
-function getUser(){
+/*function getUser(){
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("Essie")
@@ -22,15 +22,15 @@ function getFollowers(){
   })
 }
 
-Promise.all([getUser(),  getPosts(), getFollowers()])
+/*Promise.all([getUser(),  getPosts(), getFollowers()])
 .then(([user, posts, followers]) => {
   console.log("User: ", user);
   console.log("Posts: ", posts.join(","));
   console.log("Followers: ", followers);
 })
-.catch((err) => console.log(err))
+.catch((err) => console.log(err))*/
 
-function fetchSettings() {
+/*function fetchSettings() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       reject("Failed to load settings");
@@ -55,7 +55,7 @@ function fetchPayments(){
 }
 Promise.all([fetchSettings(), fetchProfile(), fetchPayments()])
 .then((details) => console.log(details))
-.catch((error) => console.log(error));
+.catch((error) => console.log(error));*/
 
 
 function fetchUser(){
@@ -79,6 +79,5 @@ Promise.all([fetchUser(), fetchNotifications(), fetchTasks()])
 .then(([user, notifications, tasks]) =>{
   console.log("Welcome", user);
   console.log("you have ", notifications.length, "notifications");
-  console.log("you have ", tasks.length, "tasks");
+  console.log
 })
-.catch((err) => console.log(err))
